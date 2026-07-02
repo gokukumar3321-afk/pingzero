@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Reviews | PingZero</title>
+    <style>
+        /* (Keeps the same sleek dark styling) */
+        :root {
+            --bg-color: #0f0f12;
+            --card-bg: #17171c;
+            --accent-color: #00ff66;
+            --text-color: #ffffff;
+            --text-secondary: #94a3b8;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #050507; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--accent-color); }
+        .header-left { display: flex; align-items: center; gap: 15px; }
+        .main-logo { height: 50px; width: auto; }
+        .logo-text { font-size: 28px; font-weight: bold; letter-spacing: 1px; }
+        .logo-text span { color: var(--accent-color); }
+        nav a { color: var(--text-color); text-decoration: none; margin-left: 20px; font-weight: 500; }
+        nav a:hover, nav a.active { color: var(--accent-color); }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .article-box { background-color: var(--card-bg); border-radius: 8px; padding: 30px; margin-bottom: 40px; border: 1px solid #23232a; }
+        .tag { display: inline-block; background-color: rgba(0, 255, 102, 0.1); color: var(--accent-color); padding: 5px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
+        h2 { font-size: 28px; margin: 0 0 15px 0; }
+        h3 { color: var(--accent-color); margin-top: 25px; }
+        p, ul { color: var(--text-secondary); }
+        footer { text-align: center; padding: 40px; color: var(--text-secondary); font-size: 14px; background-color: #050507; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="pingzero-logo.png" alt="PingZero Logo" class="main-logo">
+            <div class="logo-text">Ping<span>Zero</span></div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="guides.html">Guides</a>
+            <a href="reviews.html" class="active">Reviews</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Hardware & Game Reviews</h2>
+        <p>No bias. Honest testing on gear and games.</p>
+        <hr style="border: 1px solid #23232a; margin-bottom: 40px;">
+
+        <!-- REVIEW 1 -->
+        <div class="article-box">
+            <span class="tag">HARDWARE REVIEW</span>
+            <h2>Is a $35 Mouse Worth It for Competitive Gaming?</h2>
+            <p>Every pro gamer seems to be rocking a $150 mouse. We spent 50 hours testing budget hardware to see if a $35 mouse can actually hold its own in ranked lobbies.</p>
+            <h3>The Verdict</h3>
+            <p>You do <strong>not</strong> need a triple-digit mouse. Look for budget options featuring the <strong>PixArt 3395 sensor</strong>—it offers pro performance at a fraction of the cost.</p>
+        </div>
+
+        <!-- REVIEW 2 -->
+        <div class="article-box">
+            <span class="tag">ROBLOX SPOTLIGHT</span>
+            <h2>The Top 5 Roblox Games You Must Play This Month</h2>
+            <p>If you look beneath the surface, there are incredible indie developers building console-quality experiences inside Roblox.</p>
+            <h3>The Lineup</h3>
+            <p>Games like <em>Frontlines</em> and <em>Deepwoken</em> are shifting what's possible on the platform entirely.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PingZero. Built for gamers, by gamers.</p>
+    </footer>
+
+</body>
+</html>
