@@ -31,13 +31,24 @@
             border-bottom: 2px solid var(--accent-color);
         }
 
-        .logo {
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .main-logo {
+            height: 50px; /* Adjust height of the logo image */
+            width: auto;
+        }
+
+        .logo-text {
             font-size: 28px;
             font-weight: bold;
             letter-spacing: 1px;
         }
 
-        .logo span {
+        .logo-text span {
             color: var(--accent-color);
         }
 
@@ -135,7 +146,10 @@
 <body>
 
     <header>
-        <div class="logo">Ping<span>Zero</span></div>
+        <div class="header-left">
+            <img src="pingzero-logo.png" alt="PingZero Logo" class="main-logo">
+            <div class="logo-text">Ping<span>Zero</span></div>
+        </div>
         <nav>
             <a href="#">Home</a>
             <a href="#">Guides</a>
@@ -190,7 +204,8 @@
             <p>You do <strong>not</strong> need a triple-digit mouse to be good at games. The budget market has caught up rapidly. Mice in the $30–$40 range now include top-tier optical sensors that track flawlessly with zero cursor spin-outs.</p>
             <p>While you might sacrifice fancy custom software or extreme wireless battery life compared to premium models, the click latency and raw performance are virtually identical. If you are looking to upgrade your setup on a budget, look for mice featuring the <strong>PixArt 3395 sensor</strong>—it offers pro-level performance at a fraction of the cost.</p>
         </div>
-     <!-- ARTICLE 4 -->
+
+                <!-- ARTICLE 4 -->
         <div class="article-box">
             <span class="tag">COMPETITIVE SETUP</span>
             <h2>The Hidden Setting Causing Input Lag in Fortnite Chapter 7</h2>
@@ -203,6 +218,7 @@
                 <li><strong>Check Your Polling Rate:</strong> Generic mice update at 125Hz (8ms delay). Upgrading to a proper gaming mouse with a <strong>1000Hz polling rate</strong> drops that delay down to 1ms instantly.</li>
             </ul>
         </div>
+
     </div>
 
     <footer>
